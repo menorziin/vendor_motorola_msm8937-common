@@ -695,12 +695,34 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/msm8937-common/proprietary/vendor/lib64/vendor.dolby.hardware.dms@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.dolby.hardware.dms@1.0-impl.so \
     vendor/motorola/msm8937-common/proprietary/vendor/lib64/vendor.dolby.hardware.dms@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.dolby.hardware.dms@1.0.so
 
+# Moto FM Radio
+PRODUCT_COPY_FILES += \
+    vendor/motorola/msm8937-common/proprietary/framework/qcom.fmradio.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/qcom.fmradio.jar \
+    vendor/motorola/msm8937-common/proprietary/lib/libbtconfigstore.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libbtconfigstore.so \
+    vendor/motorola/msm8937-common/proprietary/lib/libqcomfm_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libqcomfm_jni.so \
+    vendor/motorola/msm8937-common/proprietary/lib64/libbtconfigstore.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libbtconfigstore.so \
+    vendor/motorola/msm8937-common/proprietary/lib64/libqcomfm_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libqcomfm_jni.so \
+    vendor/motorola/msm8937-common/proprietary/product/etc/permissions/com.motorola.software.fmradioservice.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.motorola.software.fmradioservice.xml \
+    vendor/motorola/msm8937-common/proprietary/product/framework/qcom.fmradio_product.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/qcom.fmradio_product.jar \
+    vendor/motorola/msm8937-common/proprietary/product/lib/libqcomfm_jni_product.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libqcomfm_jni_product.so \
+    vendor/motorola/msm8937-common/proprietary/product/lib/vendor.qti.hardware.btconfigstore@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.btconfigstore@1.0.so \
+    vendor/motorola/msm8937-common/proprietary/product/lib64/libqcomfm_jni_product.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libqcomfm_jni_product.so \
+    vendor/motorola/msm8937-common/proprietary/product/lib64/vendor.qti.hardware.btconfigstore@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.btconfigstore@1.0.so \
+    vendor/motorola/msm8937-common/proprietary/vendor/bin/init.qti.fm.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.qti.fm.sh \
+    vendor/motorola/msm8937-common/proprietary/vendor/init/init.qti.fm.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qti.fm.rc \
+    vendor/motorola/msm8937-common/proprietary/vendor/lib/vendor.qti.hardware.btconfigstore@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.btconfigstore@1.0.so \
+    vendor/motorola/msm8937-common/proprietary/vendor/lib/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so \
+    vendor/motorola/msm8937-common/proprietary/vendor/lib64/vendor.qti.hardware.btconfigstore@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.btconfigstore@1.0.so \
+    vendor/motorola/msm8937-common/proprietary/vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so
+
 PRODUCT_PACKAGES += \
     libsdm-disp-vndapis \
     libMpeg4SwEncoder \
     libOmxSwVencMpeg4 \
     MotoDolbyV3 \
     daxService \
+    FMPlayer \
+    FMRadioService \
     WfdService \
     CneApp \
     TimeService \
